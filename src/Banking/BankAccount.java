@@ -18,7 +18,7 @@ public class BankAccount {
 	}
 	
 //	Withdraw method
-	public void withdraw(double w) {
+	public void withdrawal(double w) {
 		balance -= w;
 	}
 	
@@ -49,7 +49,7 @@ public class BankAccount {
 		System.out.println("First name: " + firstName);
 		System.out.println("Last name: " + lastName);
 		System.out.println("Account ID: " + accountID);
-		System.out.println("Balance: $" + balance + "\n");
+		System.out.println("Balance: $" + balance);
 	}
 	
 	

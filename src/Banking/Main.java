@@ -11,14 +11,19 @@ public class Main {
 		a.setAccountID(1050);
 		a.deposit(50.35);
 		
-		BankAccount b = new BankAccount();
-		b.setFirstName(a.getFirstName());
-		
 		a.accountSummary();
+		System.out.println("");
 		
-		a.withdraw(20);
+		a.withdrawal(20);
 		a.accountSummary();
-		System.out.println("b: " + b.getFirstName());
+		System.out.println("");
+		
+		CheckingAccount b = new CheckingAccount();
+		b.setFirstName("Spongebob");
+		b.setLastName("Square Pants");
+		b.setAccountID(1051);
+		b.displayAccount();
+		b.withdrawal(20);
 	}
 
 }
